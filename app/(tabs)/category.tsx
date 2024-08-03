@@ -1,4 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
+import Listings from "@/components/Listings";
+import listingData from "@/data/destinations.json";
+import GroupListings from "@/components/GroupListings";
 import React from 'react'
 
 const Page = () => {
