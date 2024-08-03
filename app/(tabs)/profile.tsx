@@ -8,7 +8,7 @@ const ProfilePage = () => {
         source={{uri: 'https://example.com/profile-picture.png'}}
         style={styles.profilePicture}
       />
-      <Text style={styles.name}>John Doe</Text>
+      <Text style={styles.name}>Mille Anderson</Text>
       <Text style={styles.bio}>
         Software Enginner at MCF Technologies
       </Text>

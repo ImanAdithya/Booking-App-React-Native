@@ -25,7 +25,7 @@ import Animated, {
   useAnimatedStyle,
   useScrollViewOffset,
 } from "react-native-reanimated";
-
+import { showDialog, showToast } from './Alert';
 const { width } = Dimensions.get("window");
 const IMG_HEIGHT = 300;
 
@@ -173,7 +173,7 @@ const ListingDetails = () => {
 
       <Animated.View style={styles.footer} entering={SlideInDown.delay(200)}>
         <TouchableOpacity
-          onPress={() => {}}
+           onPress={() => {}}
           style={[styles.footerBtn, styles.footerBookBtn]}
         >
           <Text style={styles.footerBtnTxt}>Book Now</Text>
