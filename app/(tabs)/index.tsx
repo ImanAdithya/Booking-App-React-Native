@@ -23,7 +23,7 @@ const Page = () => {
   const [category, setCategory] = useState("All");
 
   const onCatChanged = (category: string) => {
-    console.log("Categpry: ", category);
+    console.log("Catgorey: ", category);
     setCategory(category);
   };
 
