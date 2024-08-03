@@ -4,7 +4,7 @@ import React from 'react'
 const Page = () => {
   return (
     <View style={styles.container}>
-      <Text>Bookmarks</Text>
+      <Text style={styles.text}>No Bookmarks Added</Text>
     </View>
   )
 }
@@ -16,5 +16,9 @@ const styles = StyleSheet.create({
     flex:1,
     justifyContent:'center',
     alignItems:'center',
+  },
+  text:{
+    fontSize: 24,
+    fontWeight: 'bold',
   }
 })
