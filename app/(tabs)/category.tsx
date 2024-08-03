@@ -1,23 +1,33 @@
-import { StyleSheet, Text, View } from 'react-native'
-import Listings from "@/components/Listings";
-import listingData from "@/data/destinations.json";
-import GroupListings from "@/components/GroupListings";
+import { StyleSheet, Text, View, FlatList } from 'react-native'
 import React from 'react'
+import DestinationCard from "@/components/DestinationCard";
+import listingData from "@/data/destinations.json";
 
-const Page = () => {
+const CategoryPage = () => {
+  const renderItem = ({ item }) => <DestinationCard destination={item} />
+
   return (
     <View style={styles.container}>
-      <Text>Category</Text>
+      <FlatList
+        data={listingData}
+        renderItem={renderItem}
+        keyExtractor={(item) => item.id}
+      />
     </View>
   )
 }
 
-export default Page
+export default CategoryPage
 
 const styles = StyleSheet.create({
   container: {
-    flex:1,
-    justifyContent:'center',
-    alignItems:'center',
-  }
+    flex: 1,
+    backgroundColor: '#f0f0f0',
+    padding: 10,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
 })
